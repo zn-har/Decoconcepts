@@ -4,6 +4,8 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { DraftingLines } from "@/components/DraftingLines";
+import { SmoothScroll } from "@/components/SmoothScroll";
+import { ScrollHUD } from "@/components/ScrollHUD";
 
 const bodoni = Bodoni_Moda({
   subsets: ["latin"],
@@ -34,10 +36,13 @@ export default function RootLayout({
       className={`dark ${bodoni.variable} ${hanken.variable}`}
     >
       <body className="bg-background text-on-background antialiased selection:bg-primary selection:text-background min-h-screen flex flex-col relative">
-        <DraftingLines />
-        <Navbar />
-        <main className="flex-grow z-10 relative pt-20">{children}</main>
-        <Footer />
+        <SmoothScroll>
+          <DraftingLines />
+          <Navbar />
+          <ScrollHUD />
+          <main className="flex-grow z-10 relative pt-20">{children}</main>
+          <Footer />
+        </SmoothScroll>
       </body>
     </html>
   );
