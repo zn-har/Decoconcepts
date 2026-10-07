@@ -160,7 +160,8 @@ export function HeroSection() {
                     alt={current.title}
                     fill
                     priority
-                    sizes="(max-width: 768px) 100vw, 500px"
+                    quality={90}
+                    sizes="(max-width: 768px) 100vw, 600px"
                     className="object-cover grayscale contrast-125 opacity-85 group-hover/image:opacity-100 group-hover/image:scale-105 transition-all duration-700 ease-out"
                   />
 

@@ -31,6 +31,7 @@ export default function ProjectDetailPage({
               alt={project.title}
               fill
               priority
+              quality={90}
               className="object-cover grayscale opacity-80"
             />
             {/* Blueprint Overlay Line */}
@@ -97,6 +98,7 @@ export default function ProjectDetailPage({
                 src={project.fig01Image}
                 alt={project.fig01Title}
                 fill
+                quality={90}
                 className="object-cover grayscale"
               />
             </div>
@@ -120,6 +122,7 @@ export default function ProjectDetailPage({
                 src={project.materialStudyImage}
                 alt={project.materialStudyTitle}
                 fill
+                quality={90}
                 className="object-cover grayscale"
               />
             </div>
@@ -135,6 +138,7 @@ export default function ProjectDetailPage({
                 src={project.elevationImage}
                 alt={project.elevationTitle}
                 fill
+                quality={90}
                 className="object-cover grayscale"
               />
             </div>

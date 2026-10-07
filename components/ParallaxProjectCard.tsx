@@ -115,6 +115,7 @@ export function ParallaxProjectCard({
               src={imageSrc}
               alt={title}
               fill
+              quality={90}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 70vw, 1200px"
               priority={priority}
               className="object-cover grayscale opacity-75 contrast-110 group-hover:opacity-100 group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"

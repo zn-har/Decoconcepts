@@ -41,6 +41,7 @@ export default function AboutPage() {
                 src="/images/materiality_about.jpg"
                 alt="Materiality Study"
                 fill
+                quality={90}
                 className="object-cover grayscale transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute bottom-4 left-4">
