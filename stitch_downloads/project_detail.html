@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>DECOCONCEPTS | The Modernist Villa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "background": "#131313",
+                      "on-primary-fixed": "#1a1c1c",
+                      "on-secondary-container": "#bab8b7",
+                      "surface-container-lowest": "#0e0e0e",
+                      "on-primary": "#2f3131",
+                      "on-tertiary-fixed-variant": "#454747",
+                      "on-error": "#690005",
+                      "surface-container-highest": "#353535",
+                      "secondary-container": "#4a4949",
+                      "tertiary-container": "#e2e2e2",
+                      "on-primary-fixed-variant": "#454747",
+                      "on-tertiary-container": "#636565",
+                      "error-container": "#93000a",
+                      "outline-variant": "#444748",
+                      "primary-fixed-dim": "#c6c6c7",
+                      "secondary-fixed-dim": "#c8c6c5",
+                      "on-tertiary-fixed": "#1a1c1c",
+                      "on-error-container": "#ffdad6",
+                      "surface-container-high": "#2a2a2a",
+                      "inverse-primary": "#5d5f5f",
+                      "tertiary-fixed": "#e2e2e2",
+                      "on-surface": "#e4e2e1",
+                      "on-secondary-fixed-variant": "#474646",
+                      "surface": "#131313",
+                      "surface-tint": "#c6c6c7",
+                      "on-background": "#e4e2e1",
+                      "surface-variant": "#353535",
+                      "surface-container-low": "#1b1c1c",
+                      "primary-container": "#e2e2e2",
+                      "secondary-fixed": "#e5e2e1",
+                      "primary-fixed": "#e2e2e2",
+                      "secondary": "#c8c6c5",
+                      "on-primary-container": "#636565",
+                      "on-secondary": "#313030",
+                      "tertiary-fixed-dim": "#c6c6c7",
+                      "surface-dim": "#131313",
+                      "on-tertiary": "#2f3131",
+                      "primary": "#ffffff",
+                      "inverse-surface": "#e4e2e1",
+                      "tertiary": "#ffffff",
+                      "surface-container": "#1f2020",
+                      "surface-bright": "#393939",
+                      "error": "#ffb4ab",
+                      "outline": "#8e9192",
+                      "on-secondary-fixed": "#1c1b1b",
+                      "inverse-on-surface": "#303030",
+                      "on-surface-variant": "#c4c7c8"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "margin-mobile": "24px",
+                      "margin-desktop": "64px",
+                      "container-max": "1440px",
+                      "gutter": "32px",
+                      "unit": "8px"
+              },
+              "fontFamily": {
+                      "display-xl": [
+                              "Bodoni Moda"
+                      ],
+                      "body-sm": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-md": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-lg-mobile": [
+                              "Bodoni Moda"
+                      ],
+                      "headline-lg": [
+                              "Bodoni Moda"
+                      ],
+                      "label-caps": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "display-xl": [
+                              "120px",
+                              {
+                                      "lineHeight": "110px",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "body-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "44px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "72px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.2em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body {
+            background-color: #131313;
+            color: #ffffff;
+            cursor: crosshair;
+        }
+        
+        /* The Drafting Guideline */
+        .blueprint-line {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .blueprint-line-h {
+            height: 1px;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .blueprint-line-v {
+            width: 1px;
+            height: 100%;
+            top: 0;
+        }
+        
+        /* Custom Hover for Buttons */
+        .btn-architectural {
+            border: 1px solid #ffffff;
+            transition: all 0s; /* Strict zero transition time */
+        }
+        .btn-architectural:hover {
+            background-color: #ffffff;
+            color: #131313;
+        }
+
+        /* Hide scrollbar for clean aesthetic but allow scroll */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        * {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+      </style>
+</head>
+<body class="bg-background text-primary antialiased relative min-h-screen flex flex-col font-body-lg overflow-x-hidden">
+<!-- Global Grid Lines for Architectural Feel -->
+<div class="fixed inset-0 pointer-events-none z-[-1] opacity-20">
+<div class="w-full h-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<div class="col-span-1 border-x border-white/10 h-full"></div>
+<div class="col-span-1 border-r border-white/10 h-full hidden md:block"></div>
+<div class="col-span-1 border-r border-white/10 h-full hidden md:block"></div>
+<div class="col-span-1 border-r border-white/10 h-full"></div>
+<div class="col-span-1 border-r border-white/10 h-full hidden md:block"></div>
+<div class="col-span-1 border-r border-white/10 h-full hidden md:block"></div>
+<div class="col-span-1 border-r border-white/10 h-full"></div>
+<div class="col-span-1 border-r border-white/10 h-full hidden md:block"></div>
+<div class="col-span-1 border-r border-white/10 h-full hidden md:block"></div>
+<div class="col-span-1 border-r border-white/10 h-full"></div>
+<div class="col-span-1 border-r border-white/10 h-full hidden md:block"></div>
+<div class="col-span-1 border-r border-white/10 h-full hidden md:block"></div>
+</div>
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-background/90 backdrop-blur-md border-b border-white/10 transition-all duration-0 active:scale-95">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-primary" href="#">DECOCONCEPTS</a>
+<div class="hidden md:flex items-center gap-6 font-label-caps text-label-caps">
+<a class="text-primary border-b border-primary pb-1 hover:bg-primary hover:text-on-primary" href="#">WORK</a>
+<span class="text-white/20">|</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-0 hover:bg-primary hover:text-on-primary" href="#">ABOUT</a>
+<span class="text-white/20">|</span>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-0 hover:bg-primary hover:text-on-primary" href="#">CONTACT</a>
+</div>
+<button class="md:hidden flex items-center justify-center p-2 text-primary hover:bg-primary hover:text-on-primary transition-colors duration-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-20">
+<!-- Hero Section -->
+<section class="relative w-full min-h-[819px] flex flex-col justify-end pb-16 px-margin-mobile md:px-margin-desktop mt-8">
+<div class="absolute inset-0 z-0 px-margin-mobile md:px-margin-desktop top-0 bottom-16">
+<div class="w-full h-full relative border border-white/20 overflow-hidden">
+<img alt="The Modernist Villa Exterior" class="w-full h-full object-cover grayscale opacity-80" data-alt="A striking architectural photograph of a modernist villa exterior at dusk. The building features strict geometric lines, large glass expanses reflecting the deep twilight sky, and concrete brutalist textures. The lighting is high-contrast, emphasizing structural shadows and stark illuminated interiors. The mood is imposing, silent, and highly engineered, fitting a stark dichrome aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAARmGdb3mqwRGIP5aT3HbRotbUjL-PeE6pgYDgZnhKyTTialhs1l2RlFd3kv9J82nr9QzHGGlbUX6kaq5oejeHJ7H-HjiNLnUREgEB9eEoj2SbovOpyge5Rrog5D_hBUMQByUo0sADLD310vt80cBP-HS5m_GnAkRrULlS5MUz8CJyet_2Y0KwH3Lii2it1zE5-B7EGd8dHis12gvevXomPjulZySEMbm0ltTg9ehW8voZLq98rBJgYw"/>
+<!-- Blueprint Overlay Line -->
+<div class="absolute top-1/2 left-0 w-full h-[1px] bg-white/30 mix-blend-overlay"></div>
+<div class="absolute top-0 left-1/3 w-[1px] h-full bg-white/30 mix-blend-overlay"></div>
+</div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto w-full grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<div class="col-span-4 md:col-span-8 md:col-start-1 bg-background/90 backdrop-blur-md p-8 border border-white/20 inline-block">
+<h1 class="font-display-xl text-headline-lg-mobile md:text-display-xl uppercase leading-none mb-4 tracking-tighter">THE MODERNIST<br/>VILLA</h1>
+<div class="flex flex-col md:flex-row gap-8 mt-12 font-label-caps text-label-caps text-on-surface-variant">
+<div>
+<span class="block text-primary mb-1">LOCATION</span>
+<span>OSLO, NORWAY</span>
+</div>
+<div>
+<span class="block text-primary mb-1">YEAR</span>
+<span>2023</span>
+</div>
+<div>
+<span class="block text-primary mb-1">SCOPE</span>
+<span>FULL ARCHITECTURAL BUILD</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Horizontal Blueprint Divider -->
+<div class="w-full h-[1px] bg-white my-16 md:my-32 relative">
+<div class="absolute left-margin-mobile md:left-margin-desktop top-[-4px] w-2 h-2 border border-white rounded-full bg-background"></div>
+<div class="absolute right-margin-mobile md:right-margin-desktop top-[-4px] w-2 h-2 border border-white rounded-full bg-background"></div>
+</div>
+<!-- Detail Grid Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8">
+<div class="grid grid-cols-4 md:grid-cols-12 gap-gutter items-start">
+<!-- Text Block -->
+<div class="col-span-4 md:col-span-4 pr-0 md:pr-8 mb-16 md:mb-0">
+<h2 class="font-headline-md text-headline-md mb-8 border-b border-white/20 pb-4">STRUCTURAL INTENT</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">
+                        Conceived as a monolith rising from the Scandinavian bedrock, the villa employs a strict grid logic. 
+                        Every intersection of concrete and glass is mathematically derived from the site's natural topography.
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        The absence of ornamentation forces attention onto the purity of volume and the interplay of natural light across raw surfaces.
+                    </p>
+<button class="btn-architectural mt-12 px-8 py-4 font-label-caps text-label-caps uppercase w-full text-center">
+                        VIEW FLOORPLANS
+                    </button>
+</div>
+<!-- Asymmetric Image Block 1 -->
+<div class="col-span-4 md:col-span-8 relative group cursor-pointer">
+<div class="border border-white p-2">
+<img alt="Interior Details" class="w-full aspect-[16/9] md:aspect-[21/9] object-cover grayscale" data-alt="A stark, minimalist interior view of a brutalist architectural space. A singular concrete column dominates the foreground, with a massive floor-to-ceiling window revealing a bleak, austere landscape outside. The lighting is harsh and directional, creating deep black shadows and stark white highlights. The atmosphere is cold, calculated, and monumental." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZkM8qF3HeRSlZkmnb-nPI9VFXd8lDDffX0iK-AZE1t03Ka_73qPBoAwJUYxKrNKTR-tR8leevsMmYCm6jbKNg8IiiYlKQ9nz4ac0VKNvRIn5Vog_v8z8_vwuRbwFfN6BSD60hj3yCzG4HwNSbRo0adLp5MY5SyhIG6XbyJoNPgOq2AzRlZlwis2cXbWjKZTUXQHcyv_IodWOx6DDkOsCCEnt_GVg1npA39cDEw4Q6cgV4NqbTY_HELQ"/>
+</div>
+<div class="absolute bottom-6 left-6 bg-background px-4 py-2 border border-white font-label-caps text-label-caps">
+                        FIG 01. INTERIOR VOID
+                    </div>
+</div>
+</div>
+</section>
+<!-- Staggered Layout Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-16 md:py-32">
+<div class="grid grid-cols-4 md:grid-cols-12 gap-gutter">
+<!-- Small Image Left -->
+<div class="col-span-4 md:col-span-5 md:mt-32 relative">
+<div class="border border-white/50 relative">
+<!-- Drafting marks -->
+<div class="absolute -top-4 -left-4 w-8 h-[1px] bg-white"></div>
+<div class="absolute -top-4 -left-4 w-[1px] h-8 bg-white"></div>
+<img alt="Material Detail" class="w-full aspect-square object-cover grayscale" data-alt="Close up architectural detail showing the intersection of raw steel, cast concrete, and glass. The texture of the concrete is highly visible, contrasting with the smooth, cold steel. The image is rendered in high-contrast black and white, emphasizing materiality and precise engineering over decoration." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-30OMyFOwMiurDucXBLrIg-kpUdJyVGgA-LcHXsMy14jvwwmqN2Ry5Oy5kMf5DukpyphstGyRwoEPXJ7SY68BMnZymYOL1sLcYYFlJO_JhMGgsG_qySU2RM3_1_qgEW3BImoLJWRtQWVrpzhmpn-gYCqFZLTHP6KfzE_HSqy3ilSkFtjzEGpVhWtBCI1xNMh4VBmXJ3CojD74uSqR-cSZWk9ODqLcl5wgJ1G0ZNP70LglBRPqc3f07g"/>
+</div>
+<p class="font-label-caps text-label-caps mt-4 text-on-surface-variant tracking-widest uppercase">
+                        Material Study: Concrete &amp; Steel
+                    </p>
+</div>
+<!-- Large Image Right -->
+<div class="col-span-4 md:col-span-6 md:col-start-7 mt-16 md:mt-0 relative">
+<div class="border border-white p-4 bg-surface-container-low">
+<img alt="Exterior Cantilever" class="w-full aspect-[3/4] object-cover grayscale" data-alt="An expansive architectural shot looking up at a cantilevered concrete structure against an empty sky. The geometry is sharp, angular, and defiant of gravity. The stark dichrome palette renders the concrete as varying shades of deep grey and white, creating a flat, drafted aesthetic akin to a technical drawing brought to life." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdJAjuD8ohf4CdXjAJ5h140E7xgNJfRQtygxYfa18Zlvr3XeSNxuTuXfbg8kaIiG2CufzYum4LHQOqao8BNyldJ9fY4NWh998RgqozUn7lfg0iH2lARc7Ku5_TmGr7Ctu4dIFneMMrTOAd2jj4BRC0Ln2YP7uq25Z_ynvN3ggQ67ToBw9-04J0VYg_5x-3bJ1Xif4uxgeiLBkARA1YEEt7CNPEOvomJwBP50Gbb9WIEISuUim93PGnTQ"/>
+</div>
+<div class="absolute -right-8 top-1/2 transform -translate-y-1/2 rotate-90 hidden md:block">
+<span class="font-label-caps text-label-caps text-on-surface-variant whitespace-nowrap uppercase">ELEVATION_SOUTH</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Next Project Navigation -->
+<section class="border-t border-white w-full py-16 md:py-32 px-margin-mobile md:px-margin-desktop mt-16 relative overflow-hidden group hover:bg-white transition-colors duration-0">
+<a class="absolute inset-0 z-10" href="#"></a>
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start md:items-end group-hover:text-background transition-colors duration-0 relative z-0">
+<div>
+<span class="font-label-caps text-label-caps block mb-4">NEXT PROJECT</span>
+<h3 class="font-display-xl text-headline-lg-mobile md:text-headline-lg uppercase leading-none tracking-tighter">URBAN<br/>SANCTUARY</h3>
+</div>
+<div class="mt-8 md:mt-0 font-label-caps text-label-caps flex items-center gap-2">
+                     VIEW <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-8 bg-background border-t border-white">
+<div class="font-headline-md text-headline-md text-primary">DECOCONCEPTS</div>
+<div class="flex gap-6 font-label-caps text-label-caps">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-0" href="#">INSTAGRAM</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-0" href="#">LINKEDIN</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-0" href="#">TWITTER</a>
+</div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">
+            ©2024 DECOCONCEPTS. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+</body></html>

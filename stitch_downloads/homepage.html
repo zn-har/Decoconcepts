@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Decoconcepts | Architectural Mastery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..900&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#131313",
+                        "on-primary-fixed": "#1a1c1c",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-primary": "#2f3131",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-error": "#690005",
+                        "surface-container-highest": "#353535",
+                        "secondary-container": "#4a4949",
+                        "tertiary-container": "#e2e2e2",
+                        "on-primary-fixed-variant": "#454747",
+                        "on-tertiary-container": "#636565",
+                        "error-container": "#93000a",
+                        "outline-variant": "#444748",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-primary": "#5d5f5f",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-surface": "#e4e2e1",
+                        "on-secondary-fixed-variant": "#474646",
+                        "surface": "#131313",
+                        "surface-tint": "#c6c6c7",
+                        "on-background": "#e4e2e1",
+                        "surface-variant": "#353535",
+                        "surface-container-low": "#1b1c1c",
+                        "primary-container": "#e2e2e2",
+                        "secondary-fixed": "#e5e2e1",
+                        "primary-fixed": "#e2e2e2",
+                        "secondary": "#c8c6c5",
+                        "on-primary-container": "#636565",
+                        "on-secondary": "#313030",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "surface-dim": "#131313",
+                        "on-tertiary": "#2f3131",
+                        "primary": "#ffffff",
+                        "inverse-surface": "#e4e2e1",
+                        "tertiary": "#ffffff",
+                        "surface-container": "#1f2020",
+                        "surface-bright": "#393939",
+                        "error": "#ffb4ab",
+                        "outline": "#8e9192",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "inverse-on-surface": "#303030",
+                        "on-surface-variant": "#c4c7c8"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "24px",
+                        "margin-desktop": "64px",
+                        "container-max": "1440px",
+                        "gutter": "32px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "display-xl": ["Bodoni Moda"],
+                        "body-sm": ["Hanken Grotesk"],
+                        "headline-md": ["Bodoni Moda"],
+                        "headline-lg-mobile": ["Bodoni Moda"],
+                        "headline-lg": ["Bodoni Moda"],
+                        "label-caps": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-xl": ["120px", { "lineHeight": "110px", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["40px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["12px", { "lineHeight": "16px", "letterSpacing": "0.2em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { cursor: crosshair; }
+        .hairline-y { border-left: 0.5px solid rgba(255, 255, 255, 0.3); }
+        .hairline-x { border-bottom: 0.5px solid rgba(255, 255, 255, 0.3); }
+        .hover-invert:hover { background-color: var(--primary, #ffffff); color: var(--background, #131313); transition: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary selection:text-background min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- Signature Element: Drafting Guidelines -->
+<div class="fixed inset-0 pointer-events-none z-0">
+<div class="absolute left-1/2 top-0 bottom-0 hairline-y opacity-50 transform -translate-x-1/2"></div>
+<div class="absolute top-[20%] left-0 right-0 hairline-x opacity-50"></div>
+</div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 bg-background/90 backdrop-blur-md border-b border-white/10 transition-all duration-0 active:scale-95">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-primary" href="#">DECOCONCEPTS</a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-label-caps text-label-caps text-primary border-b border-primary pb-1" href="#">WORK</a>
+<span class="text-white/30">|</span>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-0" href="#">ABOUT</a>
+<span class="text-white/30">|</span>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-0" href="#">CONTACT</a>
+</div>
+<button class="md:hidden flex items-center justify-center p-2 text-primary hover:bg-primary hover:text-on-primary transition-colors duration-0">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+<main class="flex-grow z-10 relative mt-20 pt-16">
+<!-- Hero Section -->
+<section class="min-h-[819px] flex flex-col justify-center px-margin-mobile md:px-margin-desktop relative pb-32">
+<h1 class="font-display-xl text-display-xl text-primary max-w-7xl relative z-10">
+                ARCHITECTURAL<br/>MASTERY.
+            </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-8 max-w-2xl border-l border-white/20 pl-6">
+                Structural integrity meets high-contrast minimalism. We design spaces that command attention through deliberate geometry and stark dichotomy.
+            </p>
+</section>
+<!-- Blueprint Divider -->
+<div class="w-full h-px bg-white/20 my-16 relative">
+<div class="absolute right-margin-desktop -top-3 font-label-caps text-label-caps text-on-surface-variant bg-background px-4">SELECTED WORKS // 2024</div>
+</div>
+<!-- Asymmetrical Work Grid -->
+<section class="px-margin-mobile md:px-margin-desktop py-16 grid grid-cols-1 md:grid-cols-12 gap-gutter relative">
+<!-- Project 1 (8 Cols) -->
+<article class="md:col-span-8 relative group cursor-pointer mb-16 md:mb-32">
+<div class="aspect-video w-full border border-white/20 relative overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A stark, minimalist architectural interior featuring dramatic lighting, sharp geometric shadows, and a raw concrete texture. The scene is shot in ultra-high resolution with deep charcoal and pure white tones, emphasizing structural lines and void spaces. High-end editorial photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvWOZRrtKHd97OMkt-dYayiTvU_1tRY4f_4j8RNXPEkKKxlO9YRNixvnSYdY2zS9mOrZdaxHEtFxGwHdXzpqai3pDIWDy20kaRph967q-r8yZULVHnd7gtoZQIVNlKtJDAeq6re0i9uwe0IXQU2KnZuuVlwb-V1w527vYa7K-MmZdY4QXYMJ3IWpOo11vdfKRR1Zg-KzZzB-ruNtblON81bH4j520zm8VROtJEbl2h8iOH33ATAdthRQ"/>
+<div class="absolute bottom-0 left-0 p-6 bg-background/90 border-t border-r border-white/20">
+<h2 class="font-label-caps text-label-caps text-primary">PROJECT ALPHA // TOKYO</h2>
+</div>
+</div>
+</article>
+<!-- Project 2 (4 Cols, Staggered) -->
+<article class="md:col-span-4 md:col-start-9 md:mt-64 relative group cursor-pointer mb-16">
+<div class="aspect-square w-full border border-white/20 relative overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A brutalist exterior facade of a modern high-rise building against a stark white sky. The structure features rigid vertical louvers and heavy concrete masses, casting deep, sharp shadows. The composition is highly geometric and abstract, focusing on the dichotomy of solid and void." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK0d_mIAEfnX1uSx7kDRGtHEdKjCgtB8ko2uAmls7TO2p5M4b7Q9Z1RrMZUgOswIIQFPqohsQ_WGqFub6dDFe6aFuBrKUZ1qRInWIqE__-D_YsEIYOO7kkId96G8Ay6X1SidC0J5Xrf3_47SSv51bpguEbTbFTRcCUVmr1wLt9k5YWTeGNe8ZeLggfTg1hvRSIjDqC6SpN-6vGihl4DElXeIgaxgcds4Beai_UQmJehh94uV0dJ9oW5w"/>
+<div class="absolute bottom-0 left-0 p-4 bg-background/90 border-t border-r border-white/20">
+<h2 class="font-label-caps text-label-caps text-primary">THE MONOLITH</h2>
+</div>
+</div>
+</article>
+<!-- Project 3 (12 Cols full bleed) -->
+<article class="col-span-1 md:col-span-12 relative group cursor-pointer my-16">
+<div class="h-[614px] w-full border border-white/20 relative overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 transition-opacity duration-300" data-alt="A wide-angle interior shot of an expansive, empty gallery space with perfectly polished dark floors reflecting sharp slivers of white natural light cutting through narrow vertical windows. The aesthetic is extremely clean, structural, and dichromatic, evoking a sense of monumental stillness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGnzvRaQnjO-ImVbjrnaP2VwSepIfgORStYnbTqb2VaSJ-WfiMM5IxBCVyQJcdI99RNlfp5C0VpKNX0ztRbAjuqL42vK4cJz2cpqOBYgPDKSpBknqsda6L6wOHxRHm3zOOpwfKHb32c-irlv-v-Aglu1mrgtH87hRtR5yCX1WlnbBFymPcaN7pGnM3_HJ2Fl3c9EPvUV8b0h5rx6Gb6ww1oByB9MgcX7xTCkO-yXFE85QQzrIPkUyGew"/>
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-background border border-white/20 p-8 text-center group-hover:bg-primary group-hover:text-background transition-colors duration-0">
+<h2 class="font-headline-md text-headline-md font-bold mb-2">VISTA PAVILION</h2>
+<p class="font-label-caps text-label-caps">VIEW CASE STUDY</p>
+</div>
+</div>
+</article>
+</section>
+<!-- Minimalist CTA -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center relative border-t border-white/20">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8 max-w-4xl">
+                INITIATE DIALOGUE
+            </h2>
+<button class="border border-white/30 px-12 py-6 font-label-caps text-label-caps text-primary hover-invert tracking-widest bg-transparent">
+                COMMISSION A PROJECT
+            </button>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-8 bg-background border-t border-white relative z-10">
+<div class="font-headline-md text-headline-md text-primary font-bold">
+            DECOCONCEPTS
+        </div>
+<div class="font-label-caps text-label-caps text-on-surface-variant">
+            ©2024 DECOCONCEPTS. ALL RIGHTS RESERVED.
+        </div>
+<div class="flex space-x-6">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-0" href="#">INSTAGRAM</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-0" href="#">LINKEDIN</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors duration-0" href="#">TWITTER</a>
+</div>
+</footer>
+</body></html>
