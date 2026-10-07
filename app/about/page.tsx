@@ -24,25 +24,25 @@ export default function AboutPage() {
               <h1 className="font-display-xl text-primary mb-12 uppercase leading-none">
                 Structuring
                 <br />
-                <span className="text-laterite">Tropical Void</span>
+                <span className="text-white">Tropical Void</span>
                 <br />
                 Into Form.
               </h1>
             </ScrollReveal>
 
             <ScrollReveal variant="fade-up" delay={200}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:ml-8 border-l-2 border-laterite pl-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:ml-8 border-l-2 border-white pl-6">
                 <p className="font-body-lg text-on-surface-variant leading-relaxed">
-                  Decoconcepts operates at the convergence of Kerala&apos;s ancient Thachu Shastra
-                  mathematics and tropical brutalism. We do not decorate spaces; we engineer
-                  living sanctuaries that command presence through silence, monsoon responsiveness,
-                  and raw structural integrity.
+                  Decoconcepts operates at the intersection of stark geometric discipline
+                  and tropical brutalism. We reject decorative clichés; we sculpt
+                  monolithic sanctuaries that command presence through raw unplastered masonry,
+                  monsoon responsiveness, and razor-sharp chiaroscuro light.
                 </p>
                 <p className="font-body-sm text-on-surface-variant leading-relaxed">
-                  Inspired by the indigenous Nalukettu courtyard houses and the climate-responsive
-                  ingenuity of Laurie Baker, our practice rejects the superficial. Every block of
-                  porous laterite stone (Vettukallu) is hand-quarried; every timber rafter is seasoned
-                  Malabar teak. We build structures rooted in Kerala&apos;s earth that age with profound dignity.
+                  Drawing from Kerala&apos;s climate-responsive legacy and radical architectural reduction,
+                  every structural element is essential. We combine raw board-marked concrete,
+                  porous unadorned laterite, perforated breathing jalis, and seamless black oxide planes
+                  to craft spaces of profound silence.
                 </p>
               </div>
             </ScrollReveal>
@@ -53,22 +53,22 @@ export default function AboutPage() {
             <ScrollReveal variant="scale-in" delay={300}>
               <div className="aspect-[3/4] border border-white/20 relative overflow-hidden group bg-surface-container-low shadow-2xl">
                 {/* Corner Crosshairs */}
-                <span className="absolute top-2 left-2 text-laterite text-[10px] font-mono select-none">+</span>
-                <span className="absolute top-2 right-2 text-laterite text-[10px] font-mono select-none">+</span>
-                <span className="absolute bottom-2 left-2 text-laterite text-[10px] font-mono select-none">+</span>
-                <span className="absolute bottom-2 right-2 text-laterite text-[10px] font-mono select-none">+</span>
+                <span className="absolute top-2 left-2 text-white/40 text-[10px] font-mono select-none">+</span>
+                <span className="absolute top-2 right-2 text-white/40 text-[10px] font-mono select-none">+</span>
+                <span className="absolute bottom-2 left-2 text-white/40 text-[10px] font-mono select-none">+</span>
+                <span className="absolute bottom-2 right-2 text-white/40 text-[10px] font-mono select-none">+</span>
 
                 <Image
                   src="/images/materiality_about.jpg"
-                  alt="Laterite and Teak Materiality Study"
+                  alt="Raw Concrete and Steel Structural Column"
                   fill
-                  quality={90}
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  quality={95}
+                  className="object-cover contrast-125 transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute bottom-4 left-4 right-4">
-                  <div className="font-label-caps text-primary bg-background/90 px-3 py-2 backdrop-blur-sm border border-laterite/40 flex items-center justify-between">
-                    <span>FIG 01. VETTUKALLU & TEAK</span>
-                    <span className="font-mono text-[9px] text-laterite">KERALA VERNACULAR</span>
+                  <div className="font-label-caps text-primary bg-black/90 px-3 py-2 backdrop-blur-sm border border-white/30 flex items-center justify-between">
+                    <span>FIG 01. STRUCTURAL INTERSECTION</span>
+                    <span className="font-mono text-[9px] text-white/60">RAW CONCRETE & STEEL</span>
                   </div>
                 </div>
               </div>
@@ -82,9 +82,9 @@ export default function AboutPage() {
 
       {/* Blueprint Divider */}
       <BlueprintDivider
-        label="CORE PILLARS"
-        sublabel="THACHU SHASTRA DISCIPLINE"
-        coordinate="COCHIN PORT REF"
+        label="DISCIPLINE PILLARS"
+        sublabel="STRUCTURAL METHODOLOGY"
+        coordinate="ARABIAN SEA DATUM"
       />
 
       {/* Manifesto / Data Section */}
@@ -92,41 +92,41 @@ export default function AboutPage() {
         <ScrollReveal variant="fade-up">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter border border-white/20 p-8 relative bg-surface-container-lowest/70 shadow-2xl">
             {/* Corner ticks */}
-            <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-laterite" />
-            <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-laterite" />
-            <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-laterite" />
-            <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-laterite" />
+            <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-white" />
+            <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-white" />
+            <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-white" />
+            <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-white" />
 
             <div className="flex flex-col gap-4">
-              <span className="font-mono text-[10px] text-laterite">
-                01 // THACHU SHASTRA
+              <span className="font-mono text-[10px] text-white/50">
+                01 // REDUCTION
               </span>
-              <h3 className="font-headline-md text-primary">Harmonic Geometry.</h3>
+              <h3 className="font-headline-md text-primary">Structural Truth.</h3>
               <p className="font-body-sm text-on-surface-variant leading-relaxed">
-                Ancient Kerala proportional mathematics aligning internal courtyards with solar
-                orientation and dominant monsoon wind trajectories.
+                Stripping away all decorative cladding to reveal the raw monumental power of
+                cast concrete, unplastered masonry, and geometric shadow.
               </p>
             </div>
             
             <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-l border-white/20 pt-8 md:pt-0 md:pl-8">
-              <span className="font-mono text-[10px] text-laterite">
-                02 // VERNACULAR CRAFT
+              <span className="font-mono text-[10px] text-white/50">
+                02 // CLIMATIC GEOMETRY
               </span>
-              <h3 className="font-headline-md text-primary">Living Materials.</h3>
+              <h3 className="font-headline-md text-primary">Passive Aeration.</h3>
               <p className="font-body-sm text-on-surface-variant leading-relaxed">
-                Hand-hewn laterite stone, seasoned timber louvers, black oxide floors, and clay
-                terracotta tiles that absorb and release humidity naturally.
+                Engineering perforated brick and laterite jali breeze screens that naturally
+                channel coastal winds through double-height voids, eliminating thermal load.
               </p>
             </div>
             
             <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-l border-white/20 pt-8 md:pt-0 md:pl-8">
-              <span className="font-mono text-[10px] text-laterite">
-                03 // CLIMATIC RESPONSE
+              <span className="font-mono text-[10px] text-white/50">
+                03 // MONUMENTAL VOID
               </span>
-              <h3 className="font-headline-md text-primary">Monsoon Sanctuary.</h3>
+              <h3 className="font-headline-md text-primary">Monsoon Light.</h3>
               <p className="font-body-sm text-on-surface-variant leading-relaxed">
-                Sunken Nadumuttam rain courtyards, perforated brick jali breezeways, and deep
-                protecting eaves that celebrate tropical rainfall without artificial cooling.
+                Sunken rain courtyards and crisp diagonal skylight incisions framing the drama
+                of tropical rainfall across polished black oxide floors.
               </p>
             </div>
           </div>

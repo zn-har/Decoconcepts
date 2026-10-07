@@ -11,8 +11,8 @@ export function Footer() {
         >
           DECOCONCEPTS
         </Link>
-        <span className="font-mono text-[9px] text-laterite tracking-wider mt-1">
-          KERALA VERNACULAR MODERNISM // KOCHI • WAYANAD • CALICUT
+        <span className="font-mono text-[9px] text-white/60 tracking-wider mt-1">
+          TROPICAL BRUTALISM & MINIMALISM // KOCHI • WAYANAD • CALICUT
         </span>
       </div>
       <div className="font-label-caps text-label-caps text-on-surface-variant text-center md:text-left">

@@ -71,7 +71,7 @@ export function ScrollHUD() {
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-1 flex items-center justify-between font-label-caps text-[10px] text-white/40 tracking-widest bg-background/60 backdrop-blur-sm border-b border-white/5">
           <div className="flex items-center space-x-4">
             <span className="text-white/70">
-              ELEVATION: <span className="text-laterite font-mono">+{elevation}m</span>
+              ELEVATION: <span className="text-white font-mono">+{elevation}m</span>
             </span>
             <span className="hidden sm:inline text-white/20">|</span>
             <span className="hidden sm:inline">
