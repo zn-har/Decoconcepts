@@ -4,14 +4,19 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="w-full py-12 px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-8 bg-background border-t border-white relative z-10">
-      <Link
-        href="/"
-        className="font-headline-md text-headline-md text-primary font-bold"
-      >
-        DECOCONCEPTS
-      </Link>
-      <div className="font-label-caps text-label-caps text-on-surface-variant">
-        ©2024 DECOCONCEPTS. ALL RIGHTS RESERVED.
+      <div className="flex flex-col items-center md:items-start">
+        <Link
+          href="/"
+          className="font-headline-md text-headline-md text-primary font-bold"
+        >
+          DECOCONCEPTS
+        </Link>
+        <span className="font-mono text-[9px] text-laterite tracking-wider mt-1">
+          KERALA VERNACULAR MODERNISM // KOCHI • WAYANAD • CALICUT
+        </span>
+      </div>
+      <div className="font-label-caps text-label-caps text-on-surface-variant text-center md:text-left">
+        ©2024 DECOCONCEPTS ARCHITECTS. ALL RIGHTS RESERVED.
       </div>
       <div className="flex space-x-6">
         <a

@@ -30,32 +30,38 @@ export default function ContactPage() {
           </h1>
           <div className="space-y-12">
             <div>
-              <span className="font-label-caps text-on-surface-variant block mb-2">
-                HEADQUARTERS
+              <span className="font-label-caps text-laterite block mb-2">
+                STUDIO HEADQUARTERS
               </span>
               <p className="font-body-lg text-primary">
-                1440 GRID STREET
+                12/480 BASTION STREET, FORT KOCHI
                 <br />
-                SECTOR 7, METROPOLIS
-                <br />
-                90210
+                KERALA 682001, INDIA
               </p>
             </div>
             <div>
-              <span className="font-label-caps text-on-surface-variant block mb-2">
+              <span className="font-label-caps text-laterite block mb-2">
+                REGIONAL STUDIOS
+              </span>
+              <p className="font-body-sm text-on-surface-variant">
+                CALICUT (KOZHIKODE) // WAYANAD // TRIVANDRUM
+              </p>
+            </div>
+            <div>
+              <span className="font-label-caps text-laterite block mb-2">
                 COMMUNICATIONS
               </span>
               <a
                 href="mailto:STUDIO@DECOCONCEPTS.COM"
-                className="font-body-lg text-primary hover:text-outline transition-colors block"
+                className="font-body-lg text-primary hover:text-laterite transition-colors block"
               >
                 STUDIO@DECOCONCEPTS.COM
               </a>
               <a
-                href="tel:+18005550199"
-                className="font-body-lg text-primary hover:text-outline transition-colors block"
+                href="tel:+914842215500"
+                className="font-body-lg text-primary hover:text-laterite transition-colors block mt-1"
               >
-                +1 800 555 0199
+                +91 (0) 484 221 5500
               </a>
             </div>
           </div>

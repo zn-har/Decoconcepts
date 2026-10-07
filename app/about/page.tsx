@@ -1,55 +1,78 @@
 import React from "react";
 import Image from "next/image";
+import { ScrollReveal } from "@/components/ScrollReveal";
+import { BlueprintDivider } from "@/components/BlueprintDivider";
 
 export default function AboutPage() {
   return (
     <div className="w-full max-w-container-max mx-auto">
       {/* About Section (Asymmetrical Layout) */}
-      <section className="min-h-[85vh] pt-16 pb-24 px-margin-mobile md:px-margin-desktop blueprint-line relative">
+      <section className="min-h-[85vh] pt-16 pb-24 px-margin-mobile md:px-margin-desktop relative">
         <div className="absolute left-1/3 top-0 bottom-0 draft-line-vertical hidden lg:block -z-10" />
+        
+        {/* Top Telemetry */}
+        <div className="flex items-center justify-between text-[11px] font-mono text-white/40 border-b border-white/10 pb-4 mb-12">
+          <span>PRACTICE PROFILE // EST. 2018</span>
+          <span>KOCHI • CALICUT • WAYANAD</span>
+          <span>LAT 9.9312° N // LON 76.2673° E</span>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
           {/* Large Typography / Brand Story */}
           <div className="lg:col-span-8 lg:col-start-1 flex flex-col justify-center">
-            <h1 className="font-display-xl text-primary mb-12 uppercase leading-none">
-              Structuring
-              <br />
-              Void Into
-              <br />
-              Form.
-            </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:ml-12">
-              <p className="font-body-lg text-on-surface-variant">
-                Decoconcepts operates at the intersection of rigid geometry and
-                human experience. We do not decorate spaces; we engineer
-                environments that command attention through silence and
-                structural integrity.
-              </p>
-              <p className="font-body-sm text-on-surface-variant">
-                Founded on the principles of architectural minimalism, our
-                practice rejects the superfluous. Every line drawn is a
-                commitment to permanence. Every material selected is an anchor to
-                reality. Our work is a continuous exploration of high-contrast
-                boldness within disciplined boundaries.
-              </p>
-            </div>
+            <ScrollReveal variant="clip-up">
+              <h1 className="font-display-xl text-primary mb-12 uppercase leading-none">
+                Structuring
+                <br />
+                <span className="text-laterite">Tropical Void</span>
+                <br />
+                Into Form.
+              </h1>
+            </ScrollReveal>
+
+            <ScrollReveal variant="fade-up" delay={200}>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:ml-8 border-l-2 border-laterite pl-6">
+                <p className="font-body-lg text-on-surface-variant leading-relaxed">
+                  Decoconcepts operates at the convergence of Kerala&apos;s ancient Thachu Shastra
+                  mathematics and tropical brutalism. We do not decorate spaces; we engineer
+                  living sanctuaries that command presence through silence, monsoon responsiveness,
+                  and raw structural integrity.
+                </p>
+                <p className="font-body-sm text-on-surface-variant leading-relaxed">
+                  Inspired by the indigenous Nalukettu courtyard houses and the climate-responsive
+                  ingenuity of Laurie Baker, our practice rejects the superficial. Every block of
+                  porous laterite stone (Vettukallu) is hand-quarried; every timber rafter is seasoned
+                  Malabar teak. We build structures rooted in Kerala&apos;s earth that age with profound dignity.
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
 
-          {/* Supporting Imagery / Blueprint Element */}
+          {/* Supporting Imagery / Materiality Study */}
           <div className="lg:col-span-4 lg:col-start-9 mt-16 lg:mt-0 relative">
-            <div className="aspect-[3/4] blueprint-border relative overflow-hidden group bg-surface-container-low">
-              <Image
-                src="/images/materiality_about.jpg"
-                alt="Materiality Study"
-                fill
-                quality={90}
-                className="object-cover grayscale transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute bottom-4 left-4">
-                <span className="font-label-caps text-primary bg-background/80 px-3 py-1 backdrop-blur-sm blueprint-border">
-                  FIG 01. MATERIALITY
-                </span>
+            <ScrollReveal variant="scale-in" delay={300}>
+              <div className="aspect-[3/4] border border-white/20 relative overflow-hidden group bg-surface-container-low shadow-2xl">
+                {/* Corner Crosshairs */}
+                <span className="absolute top-2 left-2 text-laterite text-[10px] font-mono select-none">+</span>
+                <span className="absolute top-2 right-2 text-laterite text-[10px] font-mono select-none">+</span>
+                <span className="absolute bottom-2 left-2 text-laterite text-[10px] font-mono select-none">+</span>
+                <span className="absolute bottom-2 right-2 text-laterite text-[10px] font-mono select-none">+</span>
+
+                <Image
+                  src="/images/materiality_about.jpg"
+                  alt="Laterite and Teak Materiality Study"
+                  fill
+                  quality={90}
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute bottom-4 left-4 right-4">
+                  <div className="font-label-caps text-primary bg-background/90 px-3 py-2 backdrop-blur-sm border border-laterite/40 flex items-center justify-between">
+                    <span>FIG 01. VETTUKALLU & TEAK</span>
+                    <span className="font-mono text-[9px] text-laterite">KERALA VERNACULAR</span>
+                  </div>
+                </div>
               </div>
-            </div>
+            </ScrollReveal>
             {/* Decorative Drafting Lines */}
             <div className="absolute -right-8 top-1/4 w-16 h-px bg-white/30 hidden lg:block" />
             <div className="absolute -bottom-8 left-1/4 w-px h-16 bg-white/30 hidden lg:block" />
@@ -57,44 +80,57 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Manifesto / Data Section */}
-      <section className="py-24 px-margin-mobile md:px-margin-desktop blueprint-line">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter blueprint-border p-8 relative bg-surface-container-lowest/50">
-          {/* Corner ticks */}
-          <div className="absolute top-0 left-0 w-4 h-4 border-t border-l border-primary" />
-          <div className="absolute top-0 right-0 w-4 h-4 border-t border-r border-primary" />
-          <div className="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-primary" />
-          <div className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-primary" />
+      {/* Blueprint Divider */}
+      <BlueprintDivider
+        label="CORE PILLARS"
+        sublabel="THACHU SHASTRA DISCIPLINE"
+        coordinate="COCHIN PORT REF"
+      />
 
-          <div className="flex flex-col gap-4">
-            <span className="font-label-caps text-primary">
-              01 // PHILOSOPHY
-            </span>
-            <h3 className="font-headline-md text-primary">Reduction.</h3>
-            <p className="font-body-sm text-on-surface-variant">
-              Stripping away the unnecessary to reveal the essential
-              architecture of a space.
-            </p>
+      {/* Manifesto / Data Section */}
+      <section className="py-16 md:py-24 px-margin-mobile md:px-margin-desktop">
+        <ScrollReveal variant="fade-up">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-gutter border border-white/20 p-8 relative bg-surface-container-lowest/70 shadow-2xl">
+            {/* Corner ticks */}
+            <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-laterite" />
+            <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-laterite" />
+            <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-laterite" />
+            <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-laterite" />
+
+            <div className="flex flex-col gap-4">
+              <span className="font-mono text-[10px] text-laterite">
+                01 // THACHU SHASTRA
+              </span>
+              <h3 className="font-headline-md text-primary">Harmonic Geometry.</h3>
+              <p className="font-body-sm text-on-surface-variant leading-relaxed">
+                Ancient Kerala proportional mathematics aligning internal courtyards with solar
+                orientation and dominant monsoon wind trajectories.
+              </p>
+            </div>
+            
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-l border-white/20 pt-8 md:pt-0 md:pl-8">
+              <span className="font-mono text-[10px] text-laterite">
+                02 // VERNACULAR CRAFT
+              </span>
+              <h3 className="font-headline-md text-primary">Living Materials.</h3>
+              <p className="font-body-sm text-on-surface-variant leading-relaxed">
+                Hand-hewn laterite stone, seasoned timber louvers, black oxide floors, and clay
+                terracotta tiles that absorb and release humidity naturally.
+              </p>
+            </div>
+            
+            <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-l border-white/20 pt-8 md:pt-0 md:pl-8">
+              <span className="font-mono text-[10px] text-laterite">
+                03 // CLIMATIC RESPONSE
+              </span>
+              <h3 className="font-headline-md text-primary">Monsoon Sanctuary.</h3>
+              <p className="font-body-sm text-on-surface-variant leading-relaxed">
+                Sunken Nadumuttam rain courtyards, perforated brick jali breezeways, and deep
+                protecting eaves that celebrate tropical rainfall without artificial cooling.
+              </p>
+            </div>
           </div>
-          <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-l border-white/20 pt-8 md:pt-0 md:pl-8">
-            <span className="font-label-caps text-primary">
-              02 // METHODOLOGY
-            </span>
-            <h3 className="font-headline-md text-primary">Precision.</h3>
-            <p className="font-body-sm text-on-surface-variant">
-              Executing designs with surgical accuracy, where every millimeter
-              is accounted for.
-            </p>
-          </div>
-          <div className="flex flex-col gap-4 border-t md:border-t-0 md:border-l border-white/20 pt-8 md:pt-0 md:pl-8">
-            <span className="font-label-caps text-primary">03 // OUTCOME</span>
-            <h3 className="font-headline-md text-primary">Permanence.</h3>
-            <p className="font-body-sm text-on-surface-variant">
-              Creating structures and interiors designed to withstand the test
-              of time and trend.
-            </p>
-          </div>
-        </div>
+        </ScrollReveal>
       </section>
     </div>
   );

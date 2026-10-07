@@ -32,7 +32,7 @@ export default function ProjectDetailPage({
               fill
               priority
               quality={90}
-              className="object-cover grayscale opacity-80"
+              className="object-cover opacity-90 contrast-105"
             />
             {/* Blueprint Overlay Line */}
             <div className="absolute top-1/2 left-0 w-full h-[1px] bg-white/30 mix-blend-overlay pointer-events-none" />
@@ -99,7 +99,7 @@ export default function ProjectDetailPage({
                 alt={project.fig01Title}
                 fill
                 quality={90}
-                className="object-cover grayscale"
+                className="object-cover contrast-105"
               />
             </div>
             <div className="absolute bottom-6 left-6 bg-background px-4 py-2 border border-white font-label-caps text-primary">
@@ -123,7 +123,7 @@ export default function ProjectDetailPage({
                 alt={project.materialStudyTitle}
                 fill
                 quality={90}
-                className="object-cover grayscale"
+                className="object-cover contrast-105"
               />
             </div>
             <p className="font-label-caps mt-4 text-on-surface-variant tracking-widest uppercase">
@@ -139,7 +139,7 @@ export default function ProjectDetailPage({
                 alt={project.elevationTitle}
                 fill
                 quality={90}
-                className="object-cover grayscale"
+                className="object-cover contrast-105"
               />
             </div>
             <div className="absolute -right-8 top-1/2 transform -translate-y-1/2 rotate-90 hidden md:block">

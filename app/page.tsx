@@ -8,14 +8,14 @@ import { HeroSection } from "@/components/HeroSection";
 export default function HomePage() {
   return (
     <>
-      {/* Rich Architectural Hero Section */}
+      {/* Rich Kerala Architectural Hero Section */}
       <HeroSection />
 
       {/* Blueprint Divider */}
       <BlueprintDivider
-        label="SELECTED WORKS"
-        sublabel="CURATED EDITIONS"
-        coordinate="LAT 35.6762° N // LON 139.6503° E"
+        label="SELECTED KERALA WORKS"
+        sublabel="TROPICAL MODERNISM ARCHIVE"
+        coordinate="LAT 9.9312° N // LON 76.2673° E [KOCHI DATUM]"
       />
 
       {/* Asymmetrical Parallax Work Grid */}
@@ -24,15 +24,15 @@ export default function HomePage() {
         data-section-id="02 // WORKS"
         className="px-margin-mobile md:px-margin-desktop py-8 grid grid-cols-1 md:grid-cols-12 gap-gutter relative max-w-container-max mx-auto"
       >
-        {/* Project 1 (8 Cols - Project Alpha) */}
+        {/* Project 1 (8 Cols - Kochi Nalukettu Residence) */}
         <div className="md:col-span-8 mb-16 md:mb-28">
           <ScrollReveal variant="fade-up" delay={100}>
             <ParallaxProjectCard
               slug="project-alpha"
-              title="PROJECT ALPHA"
-              location="TOKYO, JAPAN"
+              title="KOCHI NALUKETTU RESIDENCE"
+              location="FORT KOCHI, KERALA"
               year="2024"
-              typology="INTERIOR ARCHITECTURE"
+              typology="SUNKEN NADUMUTTAM RAIN COURTYARD"
               imageSrc="/images/project_alpha.jpg"
               index="[ 01 / 04 ]"
               aspect="video"
@@ -41,15 +41,15 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
 
-        {/* Project 2 (4 Cols, Staggered - The Monolith) */}
+        {/* Project 2 (4 Cols, Staggered - The Laterite Monolith) */}
         <div className="md:col-span-4 md:col-start-9 md:mt-36 mb-16 md:mb-28">
           <ScrollReveal variant="fade-up" delay={250}>
             <ParallaxProjectCard
               slug="the-monolith"
-              title="THE MONOLITH"
-              location="ZURICH, SWITZERLAND"
+              title="THE LATERITE MONOLITH"
+              location="CALICUT, KERALA"
               year="2023"
-              typology="FACADE STRUCTURE"
+              typology="EXPOSED VETTUKALLU & JALI HUB"
               imageSrc="/images/monolith.jpg"
               index="[ 02 / 04 ]"
               aspect="square"
@@ -57,15 +57,15 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
 
-        {/* Project 3 (12 Cols Full Bleed Panoramic - Vista Pavilion) */}
+        {/* Project 3 (12 Cols Full Bleed Panoramic - Alleppey Backwater Pavilion) */}
         <div className="col-span-1 md:col-span-12 my-12 md:my-20">
           <ScrollReveal variant="scale-in" delay={150}>
             <ParallaxProjectCard
               slug="brutalist-pavilion"
-              title="VISTA PAVILION"
-              location="KYOTO, JAPAN"
+              title="ALLEPPEY BACKWATER PAVILION"
+              location="ALLEPPEY, KERALA"
               year="2024"
-              typology="EXHIBITION PAVILION & VOID STUDY"
+              typology="FLOATING TEAK RAFTER SANCTUARY"
               imageSrc="/images/vista_pavilion.jpg"
               index="[ 03 / 04 ]"
               aspect="panoramic"
@@ -73,15 +73,15 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
 
-        {/* Project 4 (12 Cols - The Modernist Villa) */}
+        {/* Project 4 (12 Cols - The Wayanad Monsoon Villa) */}
         <div className="col-span-1 md:col-span-12 my-12 md:my-20">
           <ScrollReveal variant="fade-up" delay={150}>
             <ParallaxProjectCard
               slug="modernist-villa"
-              title="THE MODERNIST VILLA"
-              location="OSLO, NORWAY"
-              year="2023"
-              typology="FULL RESIDENTIAL BUILD"
+              title="THE WAYANAD MONSOON VILLA"
+              location="WAYANAD, KERALA"
+              year="2024"
+              typology="FULL TROPICAL RESIDENCE"
               imageSrc="/images/modernist_villa_hero.jpg"
               index="[ 04 / 04 ]"
               aspect="panoramic"
@@ -94,7 +94,7 @@ export default function HomePage() {
       <BlueprintDivider
         label="COMMISSION"
         sublabel="STAGE 03"
-        coordinate="ELEVATION +18.40m"
+        coordinate="ELEVATION +18.40m [WESTERN GHATS]"
       />
 
       {/* Minimalist Architectural CTA */}
@@ -103,23 +103,23 @@ export default function HomePage() {
         className="py-24 md:py-36 px-margin-mobile md:px-margin-desktop flex flex-col items-center text-center relative max-w-container-max mx-auto"
       >
         <ScrollReveal variant="fade-up" delay={100}>
-          <div className="border border-white/20 p-8 md:p-16 max-w-3xl relative bg-surface-container-low/50 backdrop-blur-sm">
+          <div className="border border-white/20 p-8 md:p-16 max-w-3xl relative bg-surface-container-low/50 backdrop-blur-sm shadow-2xl">
             {/* Corner Crosses */}
-            <span className="absolute top-2 left-2 text-white/40 text-[10px] font-mono pointer-events-none select-none">
+            <span className="absolute top-2 left-2 text-laterite text-[10px] font-mono pointer-events-none select-none">
               +
             </span>
-            <span className="absolute top-2 right-2 text-white/40 text-[10px] font-mono pointer-events-none select-none">
+            <span className="absolute top-2 right-2 text-laterite text-[10px] font-mono pointer-events-none select-none">
               +
             </span>
-            <span className="absolute bottom-2 left-2 text-white/40 text-[10px] font-mono pointer-events-none select-none">
+            <span className="absolute bottom-2 left-2 text-laterite text-[10px] font-mono pointer-events-none select-none">
               +
             </span>
-            <span className="absolute bottom-2 right-2 text-white/40 text-[10px] font-mono pointer-events-none select-none">
+            <span className="absolute bottom-2 right-2 text-laterite text-[10px] font-mono pointer-events-none select-none">
               +
             </span>
 
-            <div className="font-mono text-[10px] text-white/40 tracking-widest uppercase mb-4">
-              [ INQUIRY // NEW COMMISSIONS 2025–2026 ]
+            <div className="font-mono text-[10px] text-laterite tracking-widest uppercase mb-4">
+              [ INQUIRY // COMMISSIONS ACROSS SOUTH ASIA & GLOBALLY ]
             </div>
 
             <h2 className="font-headline-lg text-primary mb-6">
@@ -127,8 +127,8 @@ export default function HomePage() {
             </h2>
 
             <p className="font-body-lg text-on-surface-variant max-w-xl mx-auto mb-10 font-light">
-              We collaborate with discerning clients worldwide to create structural
-              landmarks rooted in geometric clarity and spatial truth.
+              We collaborate with visionary clients to engineer tropical vernacular sanctuaries
+              rooted in Thachu Shastra geometry, raw laterite materiality, and monsoon climate truth.
             </p>
 
             <Link

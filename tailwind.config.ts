@@ -26,6 +26,12 @@ const config: Config = {
         "on-secondary": "#313030",
         outline: "#8e9192",
         "outline-variant": "#444748",
+        laterite: "#b85834",
+        "laterite-dark": "#8a3c20",
+        teak: "#8c5636",
+        brass: "#d4af37",
+        terracotta: "#c86444",
+        "black-oxide": "#111213",
       },
       spacing: {
         "margin-mobile": "24px",
