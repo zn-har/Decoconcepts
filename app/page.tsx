@@ -3,73 +3,13 @@ import Link from "next/link";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { BlueprintDivider } from "@/components/BlueprintDivider";
 import { ParallaxProjectCard } from "@/components/ParallaxProjectCard";
-import { ArrowDown } from "lucide-react";
+import { HeroSection } from "@/components/HeroSection";
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
-      <section
-        data-section-id="01 // HERO"
-        className="min-h-[85vh] flex flex-col justify-between px-margin-mobile md:px-margin-desktop relative pb-16 pt-12 max-w-container-max mx-auto"
-      >
-        {/* Top Technical Metadata Stamp */}
-        <ScrollReveal variant="fade" delay={100}>
-          <div className="flex flex-wrap items-center justify-between text-[11px] font-mono text-white/50 border-b border-white/10 pb-4 mb-12">
-            <span className="flex items-center space-x-2">
-              <span className="w-2 h-2 bg-white inline-block" />
-              <span>DATUM: BASELINE +0.00m</span>
-            </span>
-            <span className="hidden sm:inline">
-              GRID: TOKYO // OSLO // ZURICH // KYOTO
-            </span>
-            <span>ARCHITECTURAL ARCHIVE [2023–2024]</span>
-          </div>
-        </ScrollReveal>
-
-        {/* Hero Title and Statement */}
-        <div className="my-auto py-12">
-          <ScrollReveal variant="clip-up" delay={200} duration={800}>
-            <h1 className="font-display-xl text-primary max-w-7xl uppercase tracking-tighter leading-[0.9]">
-              ARCHITECTURAL
-              <br />
-              MASTERY.
-            </h1>
-          </ScrollReveal>
-
-          <ScrollReveal variant="fade-up" delay={400} duration={800}>
-            <div className="mt-10 max-w-2xl border-l-2 border-white/40 pl-6 space-y-3">
-              <p className="font-body-lg text-on-surface-variant font-light leading-relaxed">
-                Structural integrity meets high-contrast minimalism. We design spaces
-                that command attention through deliberate geometry and stark
-                dichotomy.
-              </p>
-              <div className="font-mono text-[10px] text-white/40 tracking-wider">
-                MONOLITHIC CONCRETE // POLISHED BASALT // ANODIZED STEEL
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-
-        {/* Hero Bottom Anchor / Scroll Prompt */}
-        <ScrollReveal variant="fade" delay={600}>
-          <div className="flex items-center justify-between pt-8 border-t border-white/10">
-            <a
-              href="#works"
-              className="inline-flex items-center space-x-3 font-label-caps text-[11px] text-primary hover:text-white/70 transition-colors group cursor-pointer"
-            >
-              <span className="border border-white/30 p-2 group-hover:border-white group-hover:bg-white group-hover:text-black transition-all">
-                <ArrowDown className="w-3.5 h-3.5 animate-bounce" />
-              </span>
-              <span>SCROLL TO INSPECT WORKS</span>
-            </a>
-
-            <div className="font-mono text-[10px] text-white/40 hidden md:block">
-              [ REF: SEC-01 TO SEC-04 ]
-            </div>
-          </div>
-        </ScrollReveal>
-      </section>
+      {/* Rich Architectural Hero Section */}
+      <HeroSection />
 
       {/* Blueprint Divider */}
       <BlueprintDivider
